@@ -1,0 +1,1 @@
+INSERT INTO hoa (hoaname, maintenancefee, transferfee, refinancefee, resalecertfee, otherfees, mailingaddress) VALUES ($1, $2, $3, $4, $5, $6, $7);

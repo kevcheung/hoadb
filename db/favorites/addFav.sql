@@ -1,0 +1,1 @@
+INSERT INTO favorites (users, favorites) VALUES ($1, $2);

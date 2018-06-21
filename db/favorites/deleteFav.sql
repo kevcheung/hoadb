@@ -1,0 +1,1 @@
+DELETE FROM favorites WHERE favorites = $1;

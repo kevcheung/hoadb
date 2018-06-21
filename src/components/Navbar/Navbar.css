@@ -1,0 +1,71 @@
+.navbar{
+    width: 100%;
+    height: 20vh;
+    border: 5px solid teal;
+}
+.logo{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    height: 5vh;
+    cursor: pointer;
+}
+.menu{
+    font-family: 'Hammersmith One', sans-serif;
+    color: white;
+    background-color: teal;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    padding: 5px 43px;
+}
+.dropdown{
+    display: flex;
+    float: right;
+    flex-direction: column;
+}
+.dropdownItems{
+    font-family: 'Hammersmith One', sans-serif;
+    color: white;
+    /* text-align: center; */
+    background-color: transparent;
+    flex-direction: column;
+    margin-top: -.3vh;
+}
+/* @media (max-width: 860px){
+    .logo{
+        width: 11vw;
+    }
+}
+@media (max-width: 782px){
+    .logo{
+        width: 12vw;
+    }
+}
+@media (max-width: 718px){
+    .logo{
+        width: 13vw;
+    }
+}
+@media (max-width: 662px){
+    .logo{
+        width: 14vw;
+    }
+}
+@media (max-width: 615px){
+    .logo{
+        width: 15vw;
+    }
+}
+@media (max-width: 575px){
+    .logo{
+        width: 16vw;
+    }
+}
+@media (max-width: 450px){
+    .logo{
+        width: 20vw;
+    }
+} */

@@ -1,0 +1,1 @@
+DELETE FROM comments WHERE comments = $1;
