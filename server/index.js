@@ -16,6 +16,8 @@ const { getComments, addComments, editComments, deleteComments } = require(`${__
 
 const port = process.env.PORT || 3001;
 
+const path = require('path');
+
 const app = express();
 
 massive(process.env.CONNECTION_STRING)
