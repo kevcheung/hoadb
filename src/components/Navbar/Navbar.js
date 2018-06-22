@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import {getUser} from '../../ducks/userReducer';
 import './Navbar.css';
 
@@ -28,13 +29,13 @@ componentDidMount(){
   render() {
     return (
       <nav className="navbar">
-        <a  href="http://localhost:3000/#/"><button className="logo">door / door</button></a>
+        <Link to="/"><button className="logo">door / door</button></Link>
         <button className="menu" onClick={this.showMenu}>Menu</button>
         {this.state.showMenu ? (
               <div className="dropdown" ref={(element) => { this.dropdownMenu = element}}>
-                <a href="http://localhost:3000/#/about"><button className="dropdownItems">About</button></a>
-                <a href="http://localhost:3000/#/favorites"><button className="dropdownItems">Favorites</button></a>
-                <a href="http://localhost:3000/#/landing"><button className="dropdownItems">HOA Search</button></a>
+                <Link to="/about"><button className="dropdownItems">About</button></Link>
+                <Link to="/favorites"><button className="dropdownItems">Favorites</button></Link>
+                <Link to="/landing"><button className="dropdownItems">HOA Search</button></Link>
                 {this.props.user.isAuthed ? <a href={process.env.REACT_APP_LOGOUT}><button className="dropdownItems">Logout</button></a> : null}
               </div>
             ) :  null }

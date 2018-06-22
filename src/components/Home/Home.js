@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import axios from 'axios';
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
 import {getUser} from '../../ducks/userReducer';
 // import Admin from '../Admin/Admin';
@@ -22,7 +23,7 @@ class Home extends Component {
               <h1>door / door</h1>
             </div>
               {this.props.user.isAuthed ? 
-              <a href="http://localhost:3000/#/landing"><button className="homeButton">Search for an HOA</button></a> : 
+              <Link to="/landing"><button className="homeButton">Search for an HOA</button></Link> : 
               <a href={process.env.REACT_APP_LOGIN}><button className="homeButton">Login</button></a>}
           </div>
       );
