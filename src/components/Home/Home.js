@@ -18,9 +18,9 @@ class Home extends Component {
       // console.log(this.props)
       return (
           <div className="homecomp">
-            {/* <div className="home-overlay"> */}
+            <div className="home-overlay">
               <h1>door / door</h1>
-            {/* </div> */}
+            </div>
               {this.props.user.isAuthed ? 
               <a href="http://localhost:3000/#/landing"><button className="homeButton">Search for an HOA</button></a> : 
               <a href={process.env.REACT_APP_LOGIN}><button className="homeButton">Login</button></a>}

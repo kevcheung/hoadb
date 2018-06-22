@@ -9,22 +9,25 @@
     text-align: center;
 }
 .homecomp{
-    border: 5px solid crimson;
+    /* border: 2px solid crimson; */
     margin-top: 10vh;
 }
-/* .home-overlay{
-    background-color: rgb( 0, 0, 0, 0.3)
-} */
+.home-overlay{
+    background-color: rgba(9, 182, 182, 0.5);
+}
 h1{
     color: white;
     font-family: 'Pacifico', cursive;
     text-align: center;
-    font-size: 56px;
+    font-size: 10vh;
+    margin-top: 20vh;
 }
 .homeButton{
     font-family: 'Hammersmith One', sans-serif;
+    font-size: 20px;
     color: white;
-    background-color: teal;
+    background-color: rgb(9, 182, 182, 0.7);
     border-radius: 5px;
+    padding: 5px 43px;
     cursor: pointer;
 }
